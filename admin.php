@@ -100,7 +100,7 @@ if (isset($_GET['action'])) {
         </ul>
     </main>
     <footer>
-        <p>&copy; 17:11:23 Admin | Webdevstudio</p>
+        <p>17:11:23 Admin | Webdevstudio</p>
     </footer>
 </body>
 </html>
