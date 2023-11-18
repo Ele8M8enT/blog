@@ -7,7 +7,7 @@ $post = new Post();
 
 switch ($action) {
     case 'add':
-        // Przykładowa obsługa dodawania nowego postu
+        
         $title = $_POST['title'];
         $content = $_POST['content'];
         $result = $post->addPost($title, $content);
@@ -20,7 +20,7 @@ switch ($action) {
         break;
 
     case 'edit':
-        // Przykładowa obsługa edycji istniejącego postu
+        
         $postId = $_POST['post_id'];
         $title = $_POST['title'];
         $content = $_POST['content'];
@@ -34,7 +34,7 @@ switch ($action) {
         break;
 
     case 'delete':
-        // Przykładowa obsługa usuwania postu
+        
         $postId = $_GET['post_id'];
         $result = $post->deletePost($postId);
 
