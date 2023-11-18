@@ -30,7 +30,7 @@ $posts = $post->getPosts();
                 </div>
                 
 
-                <!-- Wyswietlanie obrazkow -->
+               
                 <?php if (!empty($post['images'])): ?>
                     <div class="post-images">
                         <?php foreach ($post['images'] as $imagePath): ?>
