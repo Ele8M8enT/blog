@@ -22,7 +22,7 @@ $singlePost = $post->getPostById($postId);
             <h2><?php echo $singlePost['title']; ?></h2>
             <p><?php echo $singlePost['content']; ?></p>
 
-            <!-- Display images if available -->
+            
             <?php if (!empty($singlePost['images'])): ?>
                 <div class="post-images">
                     <?php foreach ($singlePost['images'] as $imagePath): ?>
