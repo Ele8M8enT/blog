@@ -29,8 +29,6 @@ $posts = $post->getPosts();
                     <p><?php echo $post['content']; ?></p>
                 </div>
                 
-
-               
                 <?php if (!empty($post['images'])): ?>
                     <div class="post-images">
                         <?php foreach ($post['images'] as $imagePath): ?>
