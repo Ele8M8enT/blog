@@ -42,7 +42,7 @@ class Post {
     
         $posts = array();
         while ($row = $result->fetch_assoc()) {
-            $row['images'] = $row['images'] ? explode(',', $row['images']) : array(); // Dodane sprawdzenie null
+            $row['images'] = $row['images'] ? explode(',', $row['images']) : array(); 
             $posts[] = $row;
         }
     
