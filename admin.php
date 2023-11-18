@@ -72,7 +72,7 @@ if (isset($_GET['action'])) {
             <button type="submit">Dodaj post</button>
         </form>
         <?php if (isset($post_data)): ?>
-            <!-- Formularz edycji posta -->
+           
             <h2>Edytuj post</h2>
             <form action="admin.php?action=edit&post_id=<?php echo $post_id; ?>" method="post">
                 <input type="hidden" name="update_post" value="1">
