@@ -17,7 +17,7 @@ class Post {
     public function getLatestPostSince($timestamp) {
         $conn = $this->db->getConnection();
         
-        // Używamy parametrycznego zapytania SQL, aby uniknąć SQL Injection
+        
         $query = "SELECT * FROM posts WHERE created_at > FROM_UNIXTIME(?) ORDER BY created_at DESC LIMIT 1";
         $stmt = $conn->prepare($query);
         $stmt->bind_param("i", $timestamp);
@@ -68,13 +68,13 @@ class Post {
     }
 
     public function addImages($post_id, $images) {
-        // Przyjmujemy, że "images" to tablica plików przekazywanych w formularzu
+        
         foreach ($images['name'] as $key => $image_name) {
             $tmp_name = $images['tmp_name'][$key];
             $path = "images/" . basename($image_name);
             move_uploaded_file($tmp_name, $path);
 
-            // Dodajemy informacje o obrazie do bazy danych
+            
             $sql = "INSERT INTO images (post_id, path) VALUES (?, ?)";
             $stmt = $this->conn->prepare($sql);
             $stmt->bind_param("is", $post_id, $path);
