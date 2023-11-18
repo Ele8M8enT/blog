@@ -86,7 +86,7 @@ if (isset($_GET['action'])) {
                 <button type="submit">Zapisz zmiany</button>
             </form>
         <?php endif; ?>
-        <!-- Lista postów -->
+       
         <h2>Lista postów</h2>
         <ul>
             <?php
