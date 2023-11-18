@@ -1,7 +1,7 @@
 <?php
 include('post.php');
 
-// Pobieranie postów
+
 $post = new Post();
 $posts = $post->getPosts();
 
