@@ -42,7 +42,7 @@ $posts = $post->getPosts();
         <?php endforeach; ?>
     </main>
     <footer>
-        <p>&copy; 2023 Webdevstudio Blog</p>
+        <p>Webdevstudio Blog</p>
     </footer>
     <script src="js/main.js"></script>
 </body>
